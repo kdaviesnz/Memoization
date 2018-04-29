@@ -1,5 +1,5 @@
 {
-    "name": "kdaviesnz/Memoization",
+    "name": "kdaviesnz/memoization",
     "type": "library",
     "description": "Wrapper for Ed Mann's memoize function",
     "minimum-stability": "dev",
@@ -7,13 +7,13 @@
         "kdaviesnz",
         "memoization"
     ],
-    "homepage": "https://github.com/kdaviesnz/Memoization",
+    "homepage": "https://github.com/kdaviesnz/memoization",
     "license": "MIT",
     "authors": [
         {
             "name": "Kevin Davies",
             "email": "kdaviesnz@gmail.com",
-            "homepage": "https://github.com/kdaviesnz/Memoization",
+            "homepage": "https://github.com/kdaviesnz/memoization",
             "role": "Developer"
         }
     ],
