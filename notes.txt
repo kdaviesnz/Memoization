@@ -1,0 +1,44 @@
+autoload
+This tells the Composer autoloader how to autoload this component. I recom‐ mend you use the PSR-4 autoloader, as demonstrated in Example 4-2. Beneath the psr-4 property, you map the component’s namespace prefix to a filesystem path relative to the component’s root directory. This makes our component com‐ patible with a standard PSR-4 autoloader. In Example 4-2, I map the Oreilly \ModernPHP namespace to the src/ directory. The mapping’s namespace must end with two back slash characters (\\) to avoid conflicts with other components that use a namespace with a similar sequence of characters. Based on the example mapping, if we instantiate a hypothetical Oreilly\ModernPHP\Url\Scanner class, Composer will autoload the PHP class file at src/Url/Scanner.php.
+
+composer.json
+minimum-stability (root-only)#
+
+#composer require kdaviesnz/canonicalsmiles
+
+This defines the default behavior for filtering packages by stability. This defaults to stable, so if you rely on a dev package, you should specify it in your file to avoid surprises.
+
+All versions of each package are checked for stability, and those that are less stable than the minimum-stability setting will be ignored when resolving your project dependencies. (Note that you can also specify stability requirements on a per-package basis using stability flags in the version constraints that you specify in a require block (see package links for more details).
+
+Available options (in order of stability) are dev, alpha, beta, RC, and stable.
+
+
+git
+/Applications/MAMP/htdocs/components/chemistry/CanonicalSMILES
+echo "# canonicalsmiles" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/kdaviesnz/canonicalsmiles.git
+git push -u origin master
+
+https://github.com/kdaviesnz/canonicalsmiles/releases
+
+Finally, update the packlist.org package
+
+packagist
+API key: mjnc0kpf_4O4dvyiua7n
+
+GitHub Service Hook
+
+Enabling the Packagist service hook ensures that your package will always be updated instantly when you push to GitHub.
+
+To do so you can:
+
+Go to your GitHub repository
+Click the "Settings" button for the repostory.
+Click "Integrations & services"
+Add a "Packagist" service, and configure it with your API token mjnc0kpf_4O4dvyiua7n, plus your Packagist username
+Check the "Active" box and submit the form
+You can then hit the "Test Service" button to trigger it and check if Packagist removes the warning about the package not being auto-updated.
+
